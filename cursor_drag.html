@@ -1,0 +1,43 @@
+<head>
+<style>
+body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  cursor: none;
+}
+div{
+  position:absolute;
+height:280px;
+  width:240px;
+  border-radius:0%;
+  border:none;
+  background: url(https://webmakersites.github.io/cursors/deafult.png);
+   background-repeat: no-repeat;
+  background-size: 17px 24px;
+}
+button:active {
+color: red;
+background: red;
+}
+</style>
+<body>
+<html>
+  <body>
+    
+    <div id="circle"></div>
+    <button>Hi</button>
+  </body>
+</html>
+  </body>
+<script>
+document.addEventListener('mousemove', function(e) {
+  let body = document.querySelector('body');
+  let circle = document.getElementById('circle');
+  let left = e.offsetX;
+  let top = e.offsetY;
+  circle.style.left = left + 'px';
+  circle.style.top = top + 'px';
+});
+</script>
+</head>
